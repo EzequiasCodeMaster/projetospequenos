@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dropdown</title>
+    <style>
+        .dropdown {
+            position: relative;
+        }
+        
+        .botao {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            border: 1px solid blue;
+            cursor: pointer;
+        }
+        
+        .dropdown-conteiner {
+            display: none; /*esconde os links do menu*/
+            background-color: black;
+            color: white;
+            position: absolute;
+            min-width: 160px;
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-conteiner {
+            display: block; /*faz aparecer os links do menu*/
+        }
+
+        .dropdown-conteiner a {
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-conteiner a:hover {
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="dropdown">
+        <button class="botao">Menu</button>
+        <div class="dropdown-conteiner">
+            <a href="#">Menu</a>
+            <a href="#">Contato</a>
+            <a href="#">Portfólio</a>
+        </div>
+    </div>
+    
+</body>
+</html>

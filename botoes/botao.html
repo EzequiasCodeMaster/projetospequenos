@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>botao de menu com imagem</title>
+    <style>
+        body {
+            background-color: rgb(165, 132, 90);
+        }
+      .pai {
+        text-align: center;
+        cursor: pointer;
+      }
+      #lista {
+        background-color: black;
+        color: white;
+        display: none;
+      }
+
+      .filho:hover {
+        background-color: white;
+        color: black;
+      }
+      .filho {
+        padding: 20px;
+      }
+
+
+    </style>
+</head>
+<body>
+    <div class="pai">
+        <menu id="itens"> <img src="img/imagens/Z.jpeg" alt="" onclick="clickMenu()">
+            <div id="lista">
+                <div class="filho">tesde</div>
+                <div class="filho">de menu</div>
+                <div class="filho">aquiii</div>
+            </div>
+        </menu>
+    </div>
+
+    <script>
+        function clickMenu() {
+            if (lista.style.display == 'block') {
+                lista.style.display = 'none'
+            }
+            else {
+                lista.style.display ='block'
+            }
+        }
+    </script>
+    
+</body>
+</html>

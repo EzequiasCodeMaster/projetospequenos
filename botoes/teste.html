@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     .pai {
+        text-align: center;
+        border: 1px solid black;
+        cursor: pointer;
+     }
+     #itens {
+        border: 1px solid blue;
+     }
+
+     .lista {
+        display: none;
+     }
+     .filho {
+        border: 1px solid darkgreen;
+     }
+    </style>
+</head>
+<body>
+    <div class="pai">
+        
+        <menu id="itens"><img  src="img/imagens/Z.jpeg" alt="" onclick="clickMenu()">
+
+            <div class="lista" id="lista" >
+                <div class="filho">ola</div>
+                <div class="filho">bem</div>
+                <div class="filho">vindo</div>
+            </div>
+        </menu>
+    </div>
+
+    <script>
+        function clickMenu(){
+            if (lista.style.display == 'block') 
+            lista.style.display = 'none'
+        else {
+            lista.style.display = 'block'
+        } 
+        } 
+    </script>
+
+</body>
+</html>

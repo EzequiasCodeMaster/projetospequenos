@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animado</title>
+
+    <style>
+
+        .superior {
+            width: 300px;
+            background-image: url(imagens/frame-iphone.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        
+        
+        section {
+            width: 95%;
+            height: 400px;
+            display: flex;
+            overflow: hidden;
+            border-radius: 12px;
+            margin: auto;
+        }
+
+        .produtos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: rgb(255, 0, 0);
+            transition: flex-grow 0.5s ease;
+            flex-grow: 1; /* Cada item ocupa a mesma largura inicialmente */
+            overflow: hidden;
+            position: relative;
+        }
+
+        .produtos h1, .produtos small, .produtos p {
+            text-align: center;
+            padding: 10px;
+            margin: 0;
+            opacity: 0; /* Inicialmente, o texto está oculto */
+            position: absolute; /* Garantir que o texto fique no centro */
+        }
+
+        .produtos:hover {
+            flex-grow: 3; /* Expandir o item ao passar o mouse */
+        }
+
+        .produtos:hover h1, .produtos:hover small, .produtos:hover p {
+            opacity: 1; /* Tornar o texto visível ao passar o mouse */
+            animation: show 1.5s forwards;
+        }
+
+        @keyframes show {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .produtos:nth-child(1) {
+            background-image: url(imagens/frame-iphone.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .produtos:nth-child(2) {
+            background-image: url(imagens/logo-facebook.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .produtos:nth-child(3) {
+            background-image: url(imagens/logo-github.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .produtos:nth-child(4) {
+            background-image: url(imagens/logo-instagram.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        /* Adicionar mais estilos conforme necessário */
+    </style>
+</head>
+<body>
+    <div class="superior">
+        <h1>Produto 1</h1>
+        <small>Descrição 1</small>
+        <p>Detalhes do produto 1</p>
+    </div>
+    <section>
+        <div class="produtos">
+            <h1>Produto 1</h1>
+            <small>Descrição 1</small>
+            <p>Detalhes do produto 1</p>
+        </div>
+        <div class="produtos">
+            <h1>Produto 2</h1>
+            <small>Descrição 2</small>
+            <p>Detalhes do produto 2</p>
+        </div>
+        <div class="produtos">
+            <h1>Produto 3</h1>
+            <small>Descrição 3</small>
+            <p>Detalhes do produto 3</p>
+        </div>
+        <div class="produtos">
+            <h1>Produto 4</h1>
+            <small>Descrição 4</small>
+            <p>Detalhes do produto 4</p>
+        </div>
+        <div class="produtos">
+            <h1>Produto 5</h1>
+            <small>Descrição 5</small>
+            <p>Detalhes do produto 5</p>
+        </div>
+        <div class="produtos">
+            <h1>Produto 6</h1>
+            <small>Descrição 6</small>
+            <p>Detalhes do produto 6</p>
+        </div>
+    </section>
+</body>
+</html>
